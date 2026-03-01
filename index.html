@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Mời Đặc Biệt - Sao Băng Chậm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center h-screen">
+    <div id="start-overlay">
+        <button class="btn-start" onclick="startExperience()">Start</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTdteThnMDZ0Mm9vOHprcmZ0dGpjb2IxOWk2bzV2dzJxMGV0emJqdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VSLIjK1WyV3GbT5m9G/giphy.webp" alt="Meme trái" class="corner-gif corner-gif-left">
+    <img src="https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3NjQwZWtmdDc3eDZqazQ0dGtoMGJld3F5aTc4eWp3cGZzaDNieWxvdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9uwnYUDw342pq/200.webp" alt="Meme phải" class="corner-gif corner-gif-right">
+    
+    <div id="invitation-card">
+        <div class="glow-overlay"></div>
+        <div class="image-wrapper">
+            
+            <img src="img/download.jpg" alt="Invitation">
+        </div>
+        <button class="confirm-btn" onclick="confirmAttendance()">Xác nhận tham dự</button>
+    </div>
+    
+    <div id="thank-you-screen">
+        <div class="glow-overlay"></div>
+        <div class="thank-you-content">
+            <div class="image-wrapper">
+                <img src="https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bHpyeXJ1bnN5YWt4bXRsejVrNXM5djQxY3g0OWJjM3FlYTN4eXgyciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/C8ih1zB9e9KJLySClx/giphy.webp" alt="Thank You" style="max-width: 150px; margin-bottom: 20px; border-radius: 10px;">
+            </div>
+            <p class="thank-you-text">Cảm ơn bạn đã dành thời gian quý giá của mình để tham dự lễ kỷ yếu của mình. Chúc bạn một ngày tốt lành!</p>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
